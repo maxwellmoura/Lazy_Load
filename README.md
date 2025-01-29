@@ -42,6 +42,9 @@ Abra o arquivo index.html no navegador.
 Role a página e observe que as imagens carregam inicialmente em baixa qualidade.
 Quando as imagens entram na tela, a resolução é automaticamente ajustada.
 
+## 📱 Responsividade
+
+O layout da página foi desenvolvido para ser responsivo, se adaptando a diferentes tamanhos de tela. Em dispositivos móveis
 
 ## 📧 Autor
 
