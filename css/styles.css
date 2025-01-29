@@ -3,33 +3,95 @@
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     background-color: #333;
 }
-.header{
+
+.header {
     text-align: center;
     font-size: 2rem;
     padding: 2rem;
     color: #FFF;
     background-color: #000;
 }
-.container{
-    width: 70vw;
+
+.container {
+    width: 90vw; 
     margin: 0 auto;
 }
-.image-container{
+
+.image-container {
     margin-bottom: 1rem;
     padding-bottom: 1rem;
     border-bottom: 1px solid #444;
 }
-.image-container img{
+
+.image-container img {
     display: flex;
     margin: 2rem auto 1rem;
-    width: 1000px;
-    height: 600px;
+    max-width: 100%; 
+    height: auto; 
 }
+
 .image-container p {
     text-align: center;
     color: #FFF;
     font-weight: bold;
+}
+
+/* Media Queries para responsividade */
+
+/* Celulares (até 600px) */
+@media (max-width: 600px) {
+    .header {
+        font-size: 1.5rem; 
+        padding: 1rem; 
+    }
+
+    .container {
+        width: 95vw; 
+    }
+
+    .image-container img {
+        margin: 1rem auto; 
+    }
+}
+
+/* Tablets (601px a 768px) */
+@media (min-width: 601px) and (max-width: 768px) {
+    .header {
+        font-size: 1.75rem; 
+    }
+
+    .container {
+        width: 85vw; 
+    }
+
+    .image-container img {
+        margin: 1.5rem auto; 
+    }
+}
+
+/* Notebooks (769px a 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        width: 80vw; 
+    }
+
+    .image-container img {
+        margin: 2rem auto; 
+    }
+}
+
+/* PCs (acima de 1024px) */
+@media (min-width: 1025px) {
+    .container {
+        width: 70vw; 
+    }
+
+    .image-container img {
+        width: 1000px; 
+        height: 600px;
+    }
 }
